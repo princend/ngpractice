@@ -13,6 +13,8 @@ import { DarkThemeDirective } from './func/dark-theme/dark-theme.directive';
 import { ThemeDescriptionComponent } from './func/theme-description/theme-description/theme-description.component';
 import { THEME } from './func/theme-description/theme-description/token';
 import { defaultTheme } from './func/theme-description/theme-description/default-theme';
+import { ChildComponent } from './func/child/child.component';
+import { InspectorComponent } from './func/inspector/inspector.component';
 
 
 export const PROVIDERS = [{ provide: API_URL, useValue: 'https://my.api' }
@@ -24,6 +26,8 @@ export const PROVIDERS = [{ provide: API_URL, useValue: 'https://my.api' }
     MyControlComponent,
     DarkThemeDirective,
     ThemeDescriptionComponent,
+    ChildComponent,
+    InspectorComponent,
   ],
   imports: [
     BrowserModule,
