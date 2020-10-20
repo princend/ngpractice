@@ -1,4 +1,4 @@
-import { Component, OnInit, Self, SkipSelf } from '@angular/core';
+import { Component, Host, OnInit, Self, SkipSelf } from '@angular/core';
 import { AnimalService } from '../providers/animal.service';
 import { FlowerService } from '../providers/flower.service';
 
@@ -11,7 +11,7 @@ import { FlowerService } from '../providers/flower.service';
 })
 export class ChildComponent implements OnInit {
 
-  constructor(public flower: FlowerService, @SkipSelf() public animal: AnimalService) { }
+  constructor(@Host() public flower: FlowerService, @Host() @SkipSelf() public animal: AnimalService) { }
 
   ngOnInit(): void {
   }
