@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { API_URL } from './func/api-token';
-import { PRESSED_KEY } from './func/press-key.token';
+import { API_URL } from './func/provide/api-token';
+import { PRESSED_KEY } from './func/provide/press-key.token';
 
 @Component({
   selector: 'app-root',
