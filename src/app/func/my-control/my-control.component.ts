@@ -54,3 +54,8 @@ export class MyControlComponent implements OnInit, ControlValueAccessor {
   }
 
 }
+
+
+export class aa{
+  
+}

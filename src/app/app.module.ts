@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyControlComponent } from './func/my-control/my-control.component';
 import { FormsModule } from '@angular/forms';
+import { API_URL } from './func/api-token';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [{ provide: API_URL, useValue: 'https://my.api' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
