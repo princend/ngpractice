@@ -11,7 +11,7 @@ import { FlowerService } from '../providers/flower.service';
 })
 export class ChildComponent implements OnInit {
 
-  constructor(public flower: FlowerService, @Self() public animal: AnimalService) { }
+  constructor(public flower: FlowerService, @SkipSelf() public animal: AnimalService) { }
 
   ngOnInit(): void {
   }

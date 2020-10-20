@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SkipSelf } from '@angular/core';
 import { AnimalService } from '../providers/animal.service';
 import { FlowerService } from '../providers/flower.service';
 
