@@ -1,2 +1,11 @@
 <app-my-control [(ngModel)]="userInfo" (ngModelChange)="log($event)"></app-my-control>
 {{ userInfo | json }}
+
+
+<p>
+  Focus this window and press a keyboard button
+</p>
+
+<p>
+  Pressed button: <strong>{{pressedKey$ | async}}</strong>
+</p>
