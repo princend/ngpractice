@@ -20,6 +20,9 @@ import { MouseComponent } from './func/mouse/mouse.component';
 import { MouseTrackerComponent } from './func/mouse-tracker/mouse-tracker.component';
 import { PersonComponent } from './func/person/person.component';
 import { FullNamePipe } from './func/full-name.pipe';
+import { PurefilterPipe } from './func/purefilter.pipe';
+import { ImpurefilterPipe } from './func/impurefilter.pipe';
+
 
 
 export const PROVIDERS = [{ provide: API_URL, useValue: 'https://my.api' }
@@ -38,6 +41,8 @@ export const PROVIDERS = [{ provide: API_URL, useValue: 'https://my.api' }
     MouseTrackerComponent,
     PersonComponent,
     FullNamePipe,
+    PurefilterPipe,
+    ImpurefilterPipe
   ],
   imports: [
     BrowserModule,

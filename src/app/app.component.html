@@ -43,3 +43,30 @@
 
 
 <app-person [person]="person"></app-person>
+
+<div>
+  <button (click)="changeFirstName()">change person firstName</button>
+</div>
+
+
+<!-- pure vs impure -->
+
+<label>firstName:</label><input #a>
+<label>lastName:</label><input #b>
+<label>show:</label><input #c>
+<button (click)="append(a.value, b.value, c.value)">Append</button>
+<div>
+  <p>Impure:</p>
+  <ng-container>
+    <p *ngFor="let item of (objs | impurefilter)">{{ item | json }}</p>
+  </ng-container>
+  <p>Pure:</p>
+  <ng-container>
+    <p *ngFor="let item of (objs | purefilter)">{{ item | json }}</p>
+  </ng-container>
+</div>
+
+
+<div>
+  <button (click)="changeRef()">Change objs Reference</button>
+</div>
