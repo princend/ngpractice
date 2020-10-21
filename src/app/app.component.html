@@ -27,3 +27,16 @@
 <app-child>
   <app-inspector></app-inspector>
 </app-child>
+
+
+<div *toggle="let controller; on: false">
+  <button (click)="controller.setOn()">Blue pill</button>
+  <button (click)="controller.setOff()">Red pill</button>
+
+  <div>
+    <span *ngIf="controller.on">it's all a dream,go back to sleep </span>
+    <span *ngIf="!controller.on">show off</span>
+  </div>
+</div>
+
+<app-mouse-tracker></app-mouse-tracker>
