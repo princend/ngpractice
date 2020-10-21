@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Person } from './person';
+import { Person } from '../person/person';
+
 
 @Pipe({
   name: 'purefilter'

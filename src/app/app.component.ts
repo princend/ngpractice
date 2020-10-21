@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { last } from 'rxjs/operators';
-import { Person } from './func/person';
+import { Person } from './func/person/person';
 import { API_URL } from './func/provide/api-token';
 import { PRESSED_KEY } from './func/provide/press-key.token';
 import { AnimalService } from './func/providers/animal.service';

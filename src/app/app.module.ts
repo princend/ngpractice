@@ -19,9 +19,9 @@ import { ToggleDirective } from './func/toggle.directive';
 import { MouseComponent } from './func/mouse/mouse.component';
 import { MouseTrackerComponent } from './func/mouse-tracker/mouse-tracker.component';
 import { PersonComponent } from './func/person/person.component';
-import { FullNamePipe } from './func/full-name.pipe';
-import { PurefilterPipe } from './func/purefilter.pipe';
-import { ImpurefilterPipe } from './func/impurefilter.pipe';
+import { FullNamePipe } from './func/pipe/full-name.pipe';
+import { PurefilterPipe } from './func/pipe/purefilter.pipe';
+import { ImpurefilterPipe } from './func/pipe/impurefilter.pipe';
 
 
 
