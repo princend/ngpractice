@@ -12,6 +12,8 @@ import { FlowerService } from './func/providers/flower.service';
   viewProviders: [{ provide: AnimalService, useValue: { emoji: '🦔' } }]
 })
 export class AppComponent {
+
+  person = { firstName: 'huang', lastName: 'Tim' }
   /**
    *
    */

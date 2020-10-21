@@ -18,6 +18,8 @@ import { InspectorComponent } from './func/inspector/inspector.component';
 import { ToggleDirective } from './func/toggle.directive';
 import { MouseComponent } from './func/mouse/mouse.component';
 import { MouseTrackerComponent } from './func/mouse-tracker/mouse-tracker.component';
+import { PersonComponent } from './func/person/person.component';
+import { FullNamePipe } from './func/full-name.pipe';
 
 
 export const PROVIDERS = [{ provide: API_URL, useValue: 'https://my.api' }
@@ -34,7 +36,8 @@ export const PROVIDERS = [{ provide: API_URL, useValue: 'https://my.api' }
     ToggleDirective,
     MouseComponent,
     MouseTrackerComponent,
-
+    PersonComponent,
+    FullNamePipe,
   ],
   imports: [
     BrowserModule,
